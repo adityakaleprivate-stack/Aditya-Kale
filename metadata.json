@@ -1,0 +1,5 @@
+{
+  "name": "FinanceBuddyGPT - AI Personal Finance Assistant",
+  "description": "An AI-based personal finance assistant for Indian users. It takes basic financial inputs and creates a personalized financial summary, savings advice, investment suggestions, a debt repayment plan, and tax-saving advice tailored to the Indian context.",
+  "requestFramePermissions": []
+}
