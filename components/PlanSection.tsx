@@ -16,7 +16,7 @@ const PlanSection: React.FC<PlanSectionProps> = ({ section, icon }) => {
         <h3 className="text-xl font-bold text-text-primary">{section.title}</h3>
       </div>
       <div 
-        className="text-text-secondary space-y-3 leading-relaxed [&_strong]:font-semibold [&_strong]:text-text-primary [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-2"
+        className="text-text-secondary text-lg space-y-3 leading-relaxed [&_strong]:font-semibold [&_strong]:text-text-primary [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-2"
         dangerouslySetInnerHTML={{ __html: section.content }} 
       />
     </div>

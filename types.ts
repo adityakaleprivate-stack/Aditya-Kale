@@ -1,8 +1,9 @@
 export interface DebtInfo {
   id: number;
   type: string;
-  amount: string;
+  outstandingAmount: string;
   interestRate: string;
+  remainingTenure: string;
 }
 
 export interface InvestmentInfo {
@@ -22,7 +23,7 @@ export interface FinancialData {
   investments: InvestmentInfo[];
   goals: string;
   goalTimeframe: string;
-  riskTolerance: 'Conservative' | 'Low' | 'Medium' | 'Moderate' | 'Aggressive';
+  riskTolerance: 'Conservative' | 'Moderate' | 'Aggressive';
 }
 
 export interface PlanSectionData {

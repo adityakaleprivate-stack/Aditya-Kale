@@ -31,18 +31,19 @@ const InputField: React.FC<InputFieldProps> = ({
     onChange,
     placeholder,
     required,
-    className: "w-full px-4 py-2 mt-2 bg-gray-100 border border-gray-200 rounded-lg shadow-sm focus:ring-2 focus:ring-primary focus:border-primary transition-colors duration-200",
   };
 
+  const baseClassName = "w-full px-4 py-2 bg-gray-100 border border-gray-200 rounded-lg shadow-sm focus:ring-2 focus:ring-primary focus:border-primary transition-colors duration-200";
+
   return (
-    <div className="w-full">
-      <label htmlFor={fieldId} className="font-semibold text-text-primary">
+    <div className="w-full flex flex-col">
+      <label htmlFor={fieldId} className="font-semibold text-text-primary flex-grow pb-2">
         {label}
       </label>
       {as === 'textarea' ? (
-        <textarea {...commonProps} rows={3} />
+        <textarea {...commonProps} rows={3} className={baseClassName} />
       ) : (
-        <input {...commonProps} type={type} />
+        <input {...commonProps} type={type} className={baseClassName} />
       )}
     </div>
   );
